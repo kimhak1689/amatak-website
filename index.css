@@ -355,3 +355,38 @@ body {
     padding-left: 15px; /* Adds padding to the left side of each column */
     padding-right: 15px; /* Adds padding to the right side of each column */
 }
+
+.photo-item {
+  background: #fff; /* White background for the card */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+  padding: 15px;
+  text-align: center;
+  transition: box-shadow 0.3s ease; /* Smooth shadow transition on hover */
+}
+
+.photo-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.photo-item p {
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.photo-item:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Increased shadow on hover */
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -15px; /* Adjust for padding */
+}
+
+.col-md-4, .col-sm-6 {
+  padding: 15px; /* Adjust for spacing */
+}
+
