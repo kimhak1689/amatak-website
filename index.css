@@ -295,50 +295,36 @@ body {
   margin-bottom: 15px;
 }
 
-.latest-releases-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px; /* Space between items */
+.latest-releases {
+    padding: 0 15px;
 }
 
-.latest-release-link {
-  flex: 1 1 calc(50% - 20px); /* 50% width with space between items */
-  text-decoration: none; /* Removes default link underline */
-  color: inherit; /* Inherits text color to match design */
+.latest-releases-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
 .latest-release {
-  background-color: #f8f9fa; /* Light background */
-  border: 1px solid #ddd; /* Subtle border for separation */
-  border-radius: 8px; /* Rounded corners */
-  padding: 15px;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 100%; /* Ensures content fills the space equally */
-  transition: transform 0.2s ease; /* Adds a smooth hover effect */
-}
-
-.latest-release:hover {
-  transform: scale(1.02); /* Slight zoom-in effect on hover */
+    flex: 1 1 calc(50% - 20px); /* Adjust for responsiveness */
+    box-sizing: border-box;
+    margin-bottom: 20px;
 }
 
 .latest-release img {
-  width: 100%; /* Full width of the container */
-  height: 200px; /* Fixed height for uniformity */
-  object-fit: cover; /* Ensures the image fits well within the set height */
-  border-radius: 8px 8px 0 0; /* Rounded top corners */
-  margin-bottom: 10px;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
 }
 
-.latest-release h5 {
-  font-size: 1.1em;
-  margin: 10px 0;
-  font-weight: bold;
+.latest-release-title {
+    text-decoration: none;
+    color: #333;
 }
 
-.latest-release p {
-  flex-grow: 1; /* Allows text to grow to fill space evenly */
-  font-size: 0.9em;
+.latest-release-title h5 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
 }
