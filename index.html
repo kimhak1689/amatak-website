@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amatak Label | Music</title>
+    <link rel="icon" type="image/x-icon" href="./favicon.ico">
+
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+        integrity="sha384-XXj+bNt+YvT9PQo8nz/ZahZ+gWNjv+0v3YFT3jK3vc0J2S0M+PmDz4TNpYYkZ4J4" crossorigin="anonymous">
+
+    <style>
+        .vertical-center {
+            min-height: 60vh;
+            display: flex;
+            align-items: center;
+        }
+
+        .social-links a {
+            margin-right: 10px;
+            color: #333;
+            font-size: 24px;
+        }
+
+        .latest-release, .artist-profile {
+            background: #f8f9fa;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            margin-bottom: 20px;
+            padding: 20px;
+        }
+
+        .latest-release img, .artist-profile img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        .artist-profile h5, .latest-release h5 {
+            font-weight: bold;
+        }
+
+        .artist-profile p, .latest-release p {
+            font-size: 14px;
+        }
+
+        .latest-releases-container, .artists-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .latest-release-link, .artist-profile-link {
+            flex: 1 1 calc(33.333% - 20px);
+            box-sizing: border-box;
+        }
+
+        .wrap {
+            padding-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm navbar-light mb-1">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="#">Amatak Label</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <section class="landing">
+            <div class="row vertical-center">
+                <div class="col-lg-8 col-md-7 text-left pb-3">
+                    <h1 class="display-1">Amatak</h1>
+                    <p class="lead pl-2">Phnom Penh, Cambodia</p>
+                </div>
+                <div class="col-lg-4 col-md-5 text-center my-auto pb-3">
+                    <img class="img-fluid" src="./image/អមត.png" alt="Amatak Logo">
+                </div>
+            </div>
+        </section>
+
+        <section class="mt-5 mb-5">
+            <h4 class="display-4">About Us</h4>
+            <div class="row">
+                <div class="col-lg-6 wrap text-left">
+                    <div class="about-desc">
+                        <h1 class="bold-text">About</h1>
+                        <div class="pt-5">
+                            <p>Hello! Welcome to Amatak Label, based in Phnom Penh, Cambodia. We are passionate about
+                                making music and pushing boundaries in the industry. Join us on our journey as we create,
+                                inspire, and bring new sounds to you.</p>
+                            <ul class="social-links list-unstyled mt-4">
+                                <li><a href="mailto:hankimhak451@gmail.com"><ion-icon
+                                            name="mail-outline"></ion-icon></a></li>
+                                <li><a href="https://www.instagram.com/definitelynothak/"><ion-icon
+                                            name="logo-instagram"></ion-icon></a></li>
+                                <li><a href="#"><ion-icon name="logo-github"></ion-icon></a></li>
+                                <li><a href="https://www.linkedin.com/in/han-kimhak/"><ion-icon
+                                            name="logo-linkedin"></ion-icon></a></li>
+                                <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mt-5">
+            <h1 class="display-4">Artists</h1>
+            <p>Meet the talented artists behind our label.</p>
+            <div class="row">
+                <div class="col-md-4 col-sm-6">
+                    <div class="artist-profile">
+                        <img src="./image/hak.jpeg" alt="HAK">
+                        <h5>HAK</h5>
+                        <p>HAK is a producer, and manager. He handle to bring beats to Amatak Label.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="artist-profile">
+                        <img src="./image/kosal.jpeg" alt="Kosal">
+                        <h5>Kosal</h5>
+                        <p>Kosal manages all operations within the label, ensuring smooth and efficient workflows behind the scenes.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="artist-profile">
+                        <img src="./image/rith.jpeg" alt="Rith">
+                        <h5>Rith</h5>
+                        <p>Rith is a rapper and songwriter known for his lyrical prowess and unique storytelling style.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="artist-profile">
+                        <img src="./image/hav.jpeg" alt="HAV">
+                        <h5>HAV</h5>
+                        <p>HAV is a multi-talented artist, rapper, producer, and sound engineer, blending creative skills with technical expertise.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="artist-profile">
+                        <img src="./image/rak.jpeg" alt="Rak">
+                        <h5>Rak</h5>
+                        <p>Rak is a rapper and producer, crafting beats and rhymes that resonate with audiences.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="artist-profile">
+                        <img src="./image/na.jpeg" alt="Na">
+                        <h5>Vathana</h5>
+                        <p>Vathana is the artist manager, providing guidance and support to ensure artists reach their full potential.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mt-5 mb-5">
+            <h4 class="display-4">Latest Releases</h4>
+            <div class="latest-releases-container">
+                <a href="link-to-release-1.html" class="latest-release-link">
+                    <div class="latest-release">
+                        <img src="./image/favor.jpg" alt="Latest Release">
+                        <h5>New Single: "Rising Sun"</h5>
+                        <p>Our latest single "Rising Sun" is out now. Experience the fresh sound that defines Amatak Label's unique style.</p>
+                    </div>
+                </a>
+                <a href="link-to-release-2.html" class="latest-release-link">
+                    <div class="latest-release">
+                        <img src="./image/windy.jpg" alt="Latest Release">
+                        <h5>New Single: "Windy"</h5>
+                        <p>Our latest single "Windy" brings a fresh breeze of sound to our collection. Check it out!</p>
+                    </div>
+                </a>
+                <a href="link-to-release-3.html" class="latest-release-link">
+                    <div class="latest-release">
+                        <img src="./image/leave.jpg" alt="Latest Release">
+                        <h5>New Single: "Leave"</h5>
+                        <p>Our latest single "Leave" explores new musical horizons with an edgy vibe. Listen now!</p>
+                    </div>
+                </a>
+                <a href="link-to-release-4.html" class="latest-release-link">
+                    <div class="latest-release">
+                        <img src="./image/tellme.png" alt="Latest Release">
+                        <h5>New Single: "Tell Me"</h5>
+                        <p>Discover our new release "Tell Me" with its captivating rhythm and deep lyrics.</p>
+                    </div>
+                </a>
+                <a href="link-to-release-5.html" class="latest-release-link">
+                    <div class="latest-release">
+                        <img src="./image/believe.png" alt="Latest Release">
+                        <h5>New Single: "Believe"</h5>
+                        <p>Check out "Believe," our newest track that's full of emotion and powerful beats.</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- <section class="mt-5">
+            <h1 class="display-4">Events</h1>
+            <p>Stay tuned for our upcoming shows and events.</p>
+        </section> -->
+
+        <section class="mt-5">
+            <h1 class="display-4">Contact Us</h1>
+            <p>For bookings, collaborations, or any inquiries, feel free to reach out to us.</p>
+            <ul class="social-links list-unstyled mt-4">
+                <li><a href="mailto:hankimhak451@gmail.com"><ion-icon name="mail-outline"></ion-icon></a></li>
+                <li><a href="https://www.instagram.com/definitelynothak/"><ion-icon name="logo-instagram"></ion-icon></a>
+                </li>
+                <li><a href="#"><ion-icon name="logo-github"></ion-icon></a></li>
+                <li><a href="https://www.linkedin.com/in/han-kimhak/"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+                <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
+            </ul>
+        </section>
+    </div>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+    </script>
+    <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+
+</body>
+
+</html>

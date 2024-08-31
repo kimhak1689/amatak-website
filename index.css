@@ -1,0 +1,344 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700|Roboto:300,400,500,700,900&display=swap");
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Poppins", sans-serif;
+  color: #222222;
+  line-height: 1.2em;
+  margin: 0;
+  font-weight: 600;
+}
+
+@media (max-width: 565px) {
+  .section-heading {
+    font-size: 40px !important;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: #777777;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.625em;
+  position: relative;
+}
+
+.vertical-center {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.link {
+  text-decoration: none;
+  color: #007bff;
+  transition: all 0.3s;
+}
+
+.link:hover {
+  color: #111;
+}
+
+.social-links li {
+  list-style: none;
+  display: inline-block;
+}
+
+.social-links li a {
+  height: 50px;
+  width: 50px;
+  display: block;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 50%;
+  position: relative;
+}
+
+.social-links li a ion-icon {
+  position: absolute;
+  font-size: 26px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.3s;
+}
+
+.social-links li a:hover {
+  color: #111;
+}
+
+.wrap {
+  padding: 0;
+}
+
+@media (max-width: 767.98px) {
+  .wrap {
+    margin-top: 40px;
+  }
+}
+
+.wrap .about-desc .bold-text {
+  position: absolute;
+  top: -80px;
+  left: 10px;
+  font-weight: 700 !important;
+  color: rgba(0, 0, 0, 0.08);
+  text-transform: uppercase;
+}
+
+@media (min-width: 992px) {
+  .wrap .about-desc .bold-text {
+    font-size: 6em;
+  }
+}
+
+@media (max-width: 991px) {
+  .wrap .about-desc .bold-text {
+    display: none;
+  }
+}
+
+.progress-style {
+  width: 400px;
+}
+
+@media (max-width: 412px) {
+  .progress-style {
+    width: 300px;
+  }
+}
+
+.interests .icon-box {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.08);
+  transition: ease-in-out 0.3s;
+}
+
+.interests .icon-box img {
+  width: 32px;
+  height: 32px;
+  padding-right: 10px;
+}
+
+.interests .icon-box h3 {
+  font-weight: 300;
+  margin: 0;
+  padding-left: 0.5rem;
+  font-size: 20px;
+  color: #111;
+}
+
+.interests .icon-box:hover {
+  background: rgba(122, 122, 122, 0.12);
+}
+
+.bg-text {
+  position: absolute;
+  top: -80px;
+  left: 10px;
+  font-weight: 700 !important;
+  color: rgba(0, 0, 0, 0.08);
+  text-transform: uppercase;
+}
+
+@media (min-width: 992px) {
+  .bg-text {
+    font-size: 6em;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .bg-text {
+    display: none;
+  }
+}
+
+.profile-text {
+  font-weight: 300;
+}
+
+@media (max-width: 768px) {
+  .profile-text {
+    font-size: 20px !important;
+  }
+}
+
+.blog-entry .text .heading {
+  font-size: 20px;
+  margin-bottom: 16px;
+  font-weight: 500;
+}
+
+.blog-entry .text .heading a {
+  color: #111;
+}
+
+.blog-entry .text .heading a:hover {
+  color: #2f89fc;
+}
+
+.blog-entry .meta > div {
+  display: inline-block;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  font-size: 15px;
+}
+
+.blog-entry .meta > div a {
+  font-size: 15px;
+  color: #8c8c8c;
+}
+
+.profile-heading {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+.profile-text {
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.section-heading {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+  margin: 30px 0 15px;
+}
+
+.experience-item,
+.education-item {
+  background-color: #f0f3f8;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.experience-item h4,
+.education-item h4 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.company,
+.institution {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+.duration {
+  font-size: 14px;
+  color: #777;
+}
+
+
+.artist-profile {
+  background-color: #f8f9fa; /* Light background for contrast */
+  border: 1px solid #ddd; /* Subtle border */
+  border-radius: 8px; /* Rounded corners */
+  overflow: hidden; /* Ensures content stays within the card */
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 20px; /* Space between profiles */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%; /* Ensure equal height for all profiles */
+}
+
+.artist-profile img {
+  width: 100%; /* Full width image */
+  height: 250px; /* Fixed height for images */
+  object-fit: cover; /* Maintain aspect ratio */
+  border-radius: 8px 8px 0 0; /* Rounded top corners */
+}
+
+.artist-profile h5 {
+  margin: 10px 0;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.artist-profile p {
+  flex-grow: 1; /* Allows the description to grow and keep space between other elements */
+  font-size: 0.9em;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 576px) {
+  .artist-profile {
+      padding: 15px; /* Adjust padding for smaller screens */
+  }
+}
+
+.wrap {
+  padding: 20px;
+}
+
+.bold-text {
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.latest-releases-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Space between items */
+}
+
+.latest-release-link {
+  flex: 1 1 calc(50% - 20px); /* 50% width with space between items */
+  text-decoration: none; /* Removes default link underline */
+  color: inherit; /* Inherits text color to match design */
+}
+
+.latest-release {
+  background-color: #f8f9fa; /* Light background */
+  border: 1px solid #ddd; /* Subtle border for separation */
+  border-radius: 8px; /* Rounded corners */
+  padding: 15px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%; /* Ensures content fills the space equally */
+  transition: transform 0.2s ease; /* Adds a smooth hover effect */
+}
+
+.latest-release:hover {
+  transform: scale(1.02); /* Slight zoom-in effect on hover */
+}
+
+.latest-release img {
+  width: 100%; /* Full width of the container */
+  height: 200px; /* Fixed height for uniformity */
+  object-fit: cover; /* Ensures the image fits well within the set height */
+  border-radius: 8px 8px 0 0; /* Rounded top corners */
+  margin-bottom: 10px;
+}
+
+.latest-release h5 {
+  font-size: 1.1em;
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+.latest-release p {
+  flex-grow: 1; /* Allows text to grow to fill space evenly */
+  font-size: 0.9em;
+}
