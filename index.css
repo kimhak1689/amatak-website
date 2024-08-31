@@ -328,3 +328,30 @@ body {
     font-weight: bold;
     margin-bottom: 10px;
 }
+
+
+
+.artist-profile {
+    border: 1px solid #ddd; /* Optional: adds a border around each card */
+    border-radius: 8px; /* Optional: rounds the corners of each card */
+    padding: 15px; /* Adds padding inside the card */
+    margin-bottom: 20px; /* Adds margin below each card */
+    background-color: #fff; /* Optional: sets background color to white */
+    text-align: center; /* Centers text within the card */
+}
+
+.artist-profile img {
+    max-width: 100%; /* Ensures image scales responsively */
+    height: auto; /* Keeps aspect ratio of image */
+    border-radius: 50%; /* Optional: rounds the image to a circle */
+}
+
+.row {
+    margin-left: -15px; /* Aligns rows properly */
+    margin-right: -15px; /* Aligns rows properly */
+}
+
+.col-md-4, .col-sm-6 {
+    padding-left: 15px; /* Adds padding to the left side of each column */
+    padding-right: 15px; /* Adds padding to the right side of each column */
+}
