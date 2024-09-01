@@ -390,3 +390,44 @@ body {
   padding: 15px; /* Adjust for spacing */
 }
 
+/* Modern Landing Section Style */
+.landing {
+  background-color: #f8f9fa; /* Light, neutral background color */
+  padding: 80px 0;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Adds subtle shadow for a lifted effect */
+}
+
+.landing h1 {
+  font-family: 'Poppins', sans-serif; /* Modern sans-serif font for a clean look */
+  font-weight: 600;
+  color: #2c3e50; /* Dark blue-grey color for contrast */
+  text-transform: uppercase;
+  letter-spacing: 2px; /* Slightly spaced out letters for a modern touch */
+}
+
+.landing p {
+  font-family: 'Open Sans', sans-serif; /* Simple, readable font */
+  font-size: 1.1rem;
+  color: #7f8c8d; /* Soft grey text color */
+}
+
+.landing img {
+  max-width: 80%;
+  height: auto;
+  border-radius: 10px; /* Rounded corners for a softer look */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth animations */
+}
+
+.landing img:hover {
+  transform: scale(1.05); /* Gentle scaling effect on hover */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Slight shadow on hover */
+}
+
+@media (max-width: 768px) {
+  .landing h1 {
+      font-size: 2.2rem; /* Responsive heading size for smaller screens */
+  }
+}
+
+
