@@ -259,6 +259,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
   height: 100%; /* Ensure equal height for all profiles */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effect */
 }
 
 .artist-profile img {
@@ -266,6 +267,16 @@ body {
   height: 250px; /* Fixed height for images */
   object-fit: cover; /* Maintain aspect ratio */
   border-radius: 8px 8px 0 0; /* Rounded top corners */
+  transition: transform 0.3s ease; /* Smooth transition for image effect */
+}
+
+.artist-profile:hover {
+  transform: scale(1.03); /* Slightly scale up the card */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Modern shadow on hover */
+}
+
+.artist-profile:hover img {
+  transform: scale(1.05); /* Slightly enlarge the image */
 }
 
 .artist-profile h5 {
@@ -295,9 +306,12 @@ body {
   margin-bottom: 15px;
 }
 
-.latest-releases {
-    padding: 0 15px;
+.latest-release {
+  position: relative;
+  overflow: hidden; /* Ensures any overflow content is hidden */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effect */
 }
+
 
 .latest-releases-container {
     display: flex;
@@ -312,10 +326,16 @@ body {
 }
 
 .latest-release img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    margin-bottom: 10px;
+  transition: transform 0.3s ease, filter 0.3s ease; /* Smooth transition for image effects */
+}
+
+.latest-release:hover {
+  transform: scale(1.03); /* Slightly scale up the card */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Modern shadow on hover */
+}
+
+.latest-release:hover img {
+  filter: brightness(0.9); /* Slightly darken the image on hover */
 }
 
 .latest-release-title {
@@ -429,5 +449,15 @@ body {
       font-size: 2.2rem; /* Responsive heading size for smaller screens */
   }
 }
+
+#clock {
+  font-size: 1rem; /* Adjust the size as needed */
+  font-weight: 400;
+  margin-top: 10px; /* Adds some space between the text and the clock */
+  color: #b8b8b8; /* Change color to suit your design */
+}
+
+
+
 
 

@@ -83,6 +83,8 @@
                     <div class="col-lg-8 col-md-7 text-left pb-3" style="padding-right: 0;">
                         <h1 class="display-1 mb-2 text-uppercase">Amatak</h1>
                         <p class="lead pl-2 mb-0">Phnom Penh, Cambodia</p>
+                        <!-- Clock display -->
+                        <p id="clock" class="lead pl-2 mb-0"></p>
                     </div>
                     <div class="col-lg-4 col-md-5 text-center my-auto pb-3" style="padding-left: 0;">
                         <img class="img-fluid" src="./image/អមត.png" alt="Amatak Logo" style="max-width: 100%; height: auto;">
@@ -92,6 +94,29 @@
         </section>
         
         
+        <!-- JavaScript to update the clock -->
+    <script>
+        // Function to display the current time
+        function updateClock() {
+            const clockElement = document.getElementById('clock');
+            const now = new Date();
+            const hours = String(now.getHours()).padStart(2, '0');
+            const minutes = String(now.getMinutes()).padStart(2, '0');
+            const seconds = String(now.getSeconds()).padStart(2, '0');
+
+            // Format time as HH:MM:SS
+            const timeString = `${hours}:${minutes}:${seconds}`;
+
+            // Display the time
+            clockElement.textContent = timeString;
+        }
+
+        // Update the clock every second
+        setInterval(updateClock, 1000);
+
+        // Initial call to display clock immediately on load
+        updateClock();
+    </script>
 
         <section class="mt-5 mb-5">
             <h4 class="display-4">About Us</h4>
@@ -265,7 +290,7 @@
         </section>
 
         <section class="mt-5 mb-5">
-            <h1 class="display-4 text-center">Listen to our work here!</h1>
+            <h1 class="display-10 text-center">Listen to our work here!</h1>
             <div class="row">
                 <div class="col-md-4 col-sm-6">
                     <div class="audio-track">
@@ -297,7 +322,7 @@
                         <p>By HAV x RXTH</p>
                     </div>
                 </div>
-                <div class="col-md-4 col-sm-6">
+                <!-- <div class="col-md-4 col-sm-6">
                     <div class="audio-track">
                         <h5>4. Tam Besdong</h5>
                         <audio controls>
@@ -326,7 +351,7 @@
                         </audio>
                         <p>By HAV</p>
                     </div>
-                </div>
+                </div> -->
                 <!-- Add more tracks as needed -->
             </div>
         </section>
@@ -338,7 +363,7 @@
         </section> -->
 
         <section class="mt-5 mb-5">
-            <h1 class="display-4 text-center">Photo Gallery</h1>
+            <h1 class="display-8 text-center">Photo Gallery</h1>
             <div class="container">
                 <div class="row">
                     <div class="col-md-4 col-sm-6 mb-4">
@@ -364,15 +389,42 @@
         
 
         <section class="mt-5">
-            <h1 class="display-4">Contact Us</h1>
+            <h1 class="display-8">Contact Us</h1>
             <p>For bookings, collaborations, or any inquiries, feel free to reach out to us.</p>
+        
+            <!-- Social Links -->
             <ul class="social-links list-unstyled mt-4">
                 <li><a href="mailto:hankimhak451@gmail.com"><ion-icon name="mail-outline"></ion-icon></a></li>
-                <li><a href="https://www.instagram.com/definitelynothak/"><ion-icon name="logo-instagram"></ion-icon></a>
-                </li>
+                <li><a href="https://www.instagram.com/definitelynothak/"><ion-icon name="logo-instagram"></ion-icon></a></li>
                 <li><a href="https://web.facebook.com/kkosall"><ion-icon name="logo-facebook"></ion-icon></a></li>
             </ul>
+        
+            <!-- Location Section -->
+            <div class="location mt-4">
+                <h2 class="h5">Our Location</h2>
+                <p>Visit us at our office or find us on the map below:</p>
+                <address>
+                    <strong>Amatak Studio</strong><br>
+                    Street 123, Phnom Penh, Cambodia
+                </address>
+        
+                <!-- Embedded Google Map -->
+                <div class="map mt-3">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.8652656081165!2d104.91744541533538!3d11.565674591799616!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x310951904d6f8c29%3A0xeace5b632aec2d56!2sPhnom%20Penh%2C%20Cambodia!5e0!3m2!1sen!2s!4v1693663633023!5m2!1sen!2s"
+                        width="100%"
+                        height="300"
+                        style="border: 0;"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
         </section>
+        
+
+
     </div>
 
     
