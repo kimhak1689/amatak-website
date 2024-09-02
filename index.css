@@ -418,6 +418,11 @@ body {
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Adds subtle shadow for a lifted effect */
 }
 
+.landing:hover {
+  transform: scale(1.05); /* Gentle scaling effect on hover */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Slight shadow on hover */
+}
+
 .landing h1 {
   font-family: 'Poppins', sans-serif; /* Modern sans-serif font for a clean look */
   font-weight: 600;
@@ -439,10 +444,7 @@ body {
   transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth animations */
 }
 
-.landing img:hover {
-  transform: scale(1.05); /* Gentle scaling effect on hover */
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Slight shadow on hover */
-}
+
 
 @media (max-width: 768px) {
   .landing h1 {
@@ -456,6 +458,8 @@ body {
   margin-top: 10px; /* Adds some space between the text and the clock */
   color: #b8b8b8; /* Change color to suit your design */
 }
+
+
 
 
 
